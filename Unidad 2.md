@@ -51,3 +51,20 @@ la pregunta que las distingue no es la tecnologia que usan, es quien la administ
 *
 * Alcanzar las velocidades máximas de **n**, **ac** o **ax** requiere que el cliente también tenga múltiples antenas (3x3 o 4x4 MIMO), canales contiguos libres de interferencia y estar a corta distancia del punto de acceso. La mayoría de smartphones y laptops están limitados a hardware 2x2 MIMO.
 
+##### Que es el internet?
+
+son millones de redes LAN y WLAN conectadas entre si, ninguna empresa ni gobierno lo administra, cada red que la compone es administrada de manera independiente y se conecta a las demas por acuerdo mutuo 
+
+##### Que es TCP/IP?
+protocolo que dice como tienen que ir los datos 
+
+##### Como se conectan las redes entre si?
+
+a traves de proveedores de servicios de internet (ISP), organizados en niveles: los ISP locales se conectan a otros mas grandes, y estos entre si, hasta formar la red global
+
+##### Que son los (IXP) ?
+
+puntos de intercambio (IXP) sitios fisicos donde distintos ISP conectan su trafico directamente entre si, en lugar de inviarlo por una ruta mas larga. Reducen latencia y costo de transito.
+
+##### Los IXP crean rutas mas cortas para el trafico del internet?
+si, es una alternativa mas accesible al envio del trafico local de internet al extranjero, ofrecen ,as estabilidad, eficiencia y mejora la calidad, todos estos beneficios a un costo menor.
