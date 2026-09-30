@@ -1,5 +1,6 @@
 
 
+### Actividad 2.1
 ##### Red de Area personal (PAN)
 
 conecta dispositivos que pertenecen a una sola persona y estan a una muy corta distancia entre si, normalmente unos pocos metros
@@ -32,4 +33,21 @@ ya no la administra una sola organizacion; suele depender de proveedores de tele
 comparacion por alcance de menor a mayor cobertura: PAN (una persona) - > LAN / WLAN ( un edificio) -> Campus Area Network (varios edificios de una organizacion) -> WAN (distintas ciudades o paises)
 
 la pregunta que las distingue no es la tecnologia que usan, es quien la administra y que tan lejos llega: eso es lo que determina si es una red LAN, CAN o WAN.
+
+
+#### Actividad 2.2
+
+| Estándar (Nombre comercial) | Año  | Frecuencia          | Velocidad Máxima Teórica               | Definición y Avance Técnico Clave                                                                                                                                                                                                                                                                    |
+| :-------------------------- | :--- | :------------------ | :------------------------------------- | :--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **802.11b** (Wi-Fi 1)       | 1999 | 2.4 GHz             | 11 Mbps                                | Primer estándar de adopción masiva. Usa modulación DSSS. Ofrecía buen alcance, pero era extremadamente susceptible a interferencias (microondas, Bluetooth).                                                                                                                                         |
+| **802.11a** (Wi-Fi 2)       | 1999 | 5 GHz               | 54 Mbps                                | Estándar simultáneo al "b". Introduce OFDM para lidiar mejor con el trayecto múltiple (multipath). Su uso en 5 GHz redujo las interferencias, pero sacrificó alcance y penetración de muros.                                                                                                         |
+| **802.11g** (Wi-Fi 3)       | 2003 | 2.4 GHz             | 54 Mbps                                | Híbrido que lleva la modulación OFDM del "a" a la banda de 2.4 GHz del "b". Su principal valor fue lograr altas velocidades manteniendo el alcance de 2.4 GHz y la retrocompatibilidad con 802.11b.                                                                                                  |
+| **802.11n** (Wi-Fi 4)       | 2009 | 2.4 y 5 GHz         | 600 Mbps                               | **Salto arquitectónico.** Introduce **MIMO** (Multiple Input, Multiple Output). Usa múltiples antenas para enviar/recibir flujos de datos espaciales simultáneos. Introduce el soporte formal de banda dual.                                                                                         |
+| **802.11ac** (Wi-Fi 5)      | 2014 | 5 GHz (exclusivo)   | ~3.5 Gbps (Wave 1) / 6.9 Gbps (Wave 2) | Escala el rendimiento en 5 GHz aumentando el ancho de canal hasta 160 MHz. Introduce **MU-MIMO** (Multi-User MIMO) en el enlace descendente, permitiendo al AP transmitir a múltiples clientes al mismo tiempo, en lugar de uno por uno.                                                             |
+| **802.11ax** (Wi-Fi 6 / 6E) | 2019 | 2.4, 5 y 6 GHz (6E) | 9.6 Gbps                               | **Cambio de enfoque:** prioriza eficiencia y latencia sobre velocidad bruta. Introduce **OFDMA** para dividir los canales en subportadoras (Resource Units) y servir a múltiples dispositivos en la misma transmisión (subiendo y bajando). Wi-Fi 6E (2020) expande el estándar a la banda de 6 GHz. |
+
+
+* El **throughput real (TCP/IP)** que se ve en una prueba de rendimiento en la capa de aplicación será, en el mejor de los escenarios, entre el **40% y el 60%** de la velocidad teórica.
+*
+* Alcanzar las velocidades máximas de **n**, **ac** o **ax** requiere que el cliente también tenga múltiples antenas (3x3 o 4x4 MIMO), canales contiguos libres de interferencia y estar a corta distancia del punto de acceso. La mayoría de smartphones y laptops están limitados a hardware 2x2 MIMO.
 
