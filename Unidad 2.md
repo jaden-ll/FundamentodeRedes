@@ -68,3 +68,25 @@ puntos de intercambio (IXP) sitios fisicos donde distintos ISP conectan su trafi
 
 ##### Los IXP crean rutas mas cortas para el trafico del internet?
 si, es una alternativa mas accesible al envio del trafico local de internet al extranjero, ofrecen ,as estabilidad, eficiencia y mejora la calidad, todos estos beneficios a un costo menor.
+
+#### Que es el modelo TCP/IP
+
+modelo de cuatro capas que describe como se comunican los dispositivos en una red social
+
+nacio del proyecto ARPANET en los anos setenta, antes del modelo OSI, por eso es el modelo practico
+
+
+#### El viaje de los datos:
+
+
+```mermaid 
+flowchart LR
+    %% Nodos principales del flujo
+    A["💻 **Dispositivo Final**<br><i>El Punto de Origen</i>"] --> B["🔌 **Red de Área Local (LAN)**<br><i>El Primer Salto</i>"]
+    B --> C["🌐 **Proveedores de Servicios (ISP)**<br><i>De la Local a la Regional</i>"]
+    C --> D["⚡ **Backbone Internacional**<br><i>La Autopista Global de Internet</i>"]
+    D --> E["🖥️ **Procesamiento en Destino**<br><i>Respuesta del Servidor</i>"]
+    
+    %% Flujo Inverso
+    E ==>|Flujo Inverso Jerárquico| A
+```
