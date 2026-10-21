@@ -102,3 +102,15 @@ La codificacion convierte los bits en un patron predefinido que facilita la sinc
 ##### Medios fisicos; conexion de la comunicacion
 
 Un dispositivo se conecta mediante su tarjeta de red (NIC), un puerto, un conector y el medio; la NIC convierte los bits en la senal que el medio puede representar y transportar.
+
+##### Ethernet capa 1 y 2 
+es el estandar dominante en LAN y trabaja en dos capas; capa 1, define medios y senalizacion y en la capa 2 define las tramas y las direcciones MAC.
+##### ARP: direccion ip a direccion de MAC
+
+el protocolo ARP permite descrubir la direccion MAC de un dispositivo a partir de su direccion IP, envia una peticion por broadcast ; solo el dueno de esa IP respode por UNICAST y el resultado se guarda en la tabla ARP
+
+##### Envenenamiento ARP 
+
+ARP no verifica quien responde; un atacante envia respuestas ARP falsas para que otros equipos asocien su MAC con la IP de otro dispositivo, por ejemplo la del router, y asi intercepta el trafico (ataque de intermediario)
+
+se mitiga con inspeccion dinamica ARP (DAI) en el switch con entradas ARP estaticas en los equipos criticos.
