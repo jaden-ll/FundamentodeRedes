@@ -159,3 +159,35 @@ Para qué sirve: permite que al receptor detecte errores de transmisión a nivel
 ---------------------------------------------------------------
 ##### Manual - Fibra optica
 
+
+
+
+
+**Fibra Multimodo:**
+Tiene un nucleo mas grueso (50 o 62.5 micras) por donde viajan varios haces de luz a la vez, generados con LED, sirven para distancias cortas, como dentro de un campus o un edificio.
+
+**Monomodo:**
+nucleo delgado, laser, larga distancia y mayor costo
+
+**Multimodo:**
+nucleo grueso, LED, corta distancia y menos costo
+
+**Componentes de un enlace de fibra optica:**
+se necesita dde cable de fibra con conectores en sus extremos y un transceptor (SFP) que convierte la senal electrica en luz: un convertidor de medios une equipos de cobre con la fibra.
+
+**TIpos de transceptores:**
+por. velocidad: SFP 1 Gbps, SFP+ 10 Gbps, SFP28 25 Gbps, QSFP+ 40 Gbps y QSFP28 100 Gbps.
+
+por fibra: SX para multimodo y 
+
+**Ventajas de la fibra optica:**
+ofrece mucho ancho de banda, llega a mayores distancias, es inmune a la interferencia electromagnetica y es mas dificil de intervenir sin ser detectado.
+
+**Donde se usa ?**
+En el backbone de internet, en los cables submarinos, en los enlaces entre edificios de un campus y en los centros de datos.
+
+**UTP frente a fibra optica:**
+
+UTP: senal elecetrica, hasta 100m, economico, sensible a la interferencia
+
+Fibra: pulsos de luz, desde cientos metros hasta decenas de kilometros, mas costosa, inmune a la interferencia.
