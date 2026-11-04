@@ -114,3 +114,48 @@ el protocolo ARP permite descrubir la direccion MAC de un dispositivo a partir d
 ARP no verifica quien responde; un atacante envia respuestas ARP falsas para que otros equipos asocien su MAC con la IP de otro dispositivo, por ejemplo la del router, y asi intercepta el trafico (ataque de intermediario)
 
 se mitiga con inspeccion dinamica ARP (DAI) en el switch con entradas ARP estaticas en los equipos criticos.
+
+-----------------------------------------------------------
+Nombre: Braulio Ledesma
+
+Campo 1
+Dato de ejemplo: 10101010 10101010 10101010 10101010 10101010 10101010 10101010 10101011 (8 bytes)
+Nombre del campo: preambulo y delimitador de inicio de trama
+Para qué sirve: sirve para sincronizar el reloj del receptor con el emisor mediante esa secuencia de bits.
+
+Campo 2
+Dato de ejemplo: FFFF.FFFF.FFFF (6 bytes)
+Nombre del campo: Direcciones MAC de destino
+Para qué sirve: Sirve para especificar la red, siendo una dirección de difusión por lo que reciben todos los dispositivos de esa red.
+
+Campo 3
+Dato de ejemplo: 0001.4321.ABCD (6 bytes)
+Nombre del campo: Direcciones MAC de origen
+Para qué sirve: identifica el origen unico de la tarjeta física de red del dispositivo emisor.
+
+Campo 4
+Dato de ejemplo: 0x0806 (2 bytes)
+Nombre del campo: Tipo de protocolo
+Para qué sirve: Indica la capa de red del receptor y dice que protocolo encapsula la carga util, dando el 0x0806 identifican específicamente al protocolo ARP.
+
+Campo 5
+Dato de ejemplo: ¿Quién tiene la IP 192.168.1.2? Responde a 192.168.1.1 (entre 46 y 1500 bytes)
+Nombre del campo: Carga util (payload)
+Para qué sirve: transporta la información util entregada por las capas superiores, puede ser un mensaje de solicitud ARP que va mareando una IP de destino corresponiente a su MAC, posee un tamaño mínimo de rellenado (46 bytes).
+
+Campo 6
+Dato de ejemplo: 0x3A7F91C2 (4 bytes)
+Nombre del campo: Secuencia de verificación de trama
+Para qué sirve: permite que al receptor detecte errores de transmisión a nivel físico, aplicando un algoritmo de redundancia cíclica (CRC-32) sobre la misma trama. Si el calculo no coincide con el valor, la trama se descarta por corrupción de datos.
+#### ACTIVIDAD 3.3
+
+|**¿Qué cambia?**|**Switch Capa 2**|**Switch Capa 3**|
+|---|---|---|
+|**¿En qué se fija?**|Solo en la dirección MAC (física).|En la MAC y en la IP (lógica).|
+|**¿Manda datos entre redes/VLANs?**|No. Ocupa un router a fuerza para eso.|Sí, lo hace él solo directamente.|
+|**¿Para qué sirve?**|Conectar PCs, impresoras o cámaras en la misma red.|Conectar varios switches, segmentar la red y manejar tráfico pesado.|
+|**¿Dónde se pone?**|En el borde (donde conectas los cables de la oficina o salón).|En el centro o cuarto principal de servidores.|
+
+---------------------------------------------------------------
+##### Manual - Fibra optica
+
